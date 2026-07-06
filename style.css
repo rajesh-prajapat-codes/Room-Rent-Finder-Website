@@ -97,6 +97,10 @@ nav ul li a.active {
   background: #084fc7;
 }
 
+.mobile-login{
+   display:none;
+}
+
 /* make responsive navbar with hamburger menu */
 
 @media (max-width: 768px) {
@@ -133,6 +137,10 @@ nav ul li a.active {
     display: flex;
     flex-direction: column;
     gap: 35px;
+  }
+
+ .mobile-login{
+  display:block;
   }
 
   nav ul li a {

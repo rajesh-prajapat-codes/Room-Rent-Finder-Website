@@ -244,6 +244,12 @@ nav ul li a.active {
 }
 
 .search-box button {
+  width:180px;
+  flex:none;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  gap:10px;
   border: none;
   background: #0d6efd;
   color: white;

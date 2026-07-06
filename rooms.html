@@ -1,0 +1,441 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"/>
+
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <i class="fa-solid fa-house"></i>
+        <h2>RoomFinder</h2>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="home.html" class="active">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="rooms.html">Rooms</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+      <a href="login.html" class="login-btn"> Login </a>
+      <div class="menu-btn">
+        <i class="fa-solid fa-bars" id="menuIcon"></i>
+      </div>
+    </header>
+
+    <section class="rooms-hero">
+      <div class="rooms-overlay">
+        <h1>Find Your Dream Room</h1>
+
+        <p>
+          Search verified rooms, PGs and hostels near your university or
+          workplace.
+        </p>
+      </div>
+    </section>
+
+    <!-- Search Bar -->
+
+    <section class="room-search">
+      <h2>Search Nearby Rooms</h2>
+
+      <div class="search-box">
+        <input type="text" placeholder="Search College, University or Area" />
+
+        <button>
+          <i class="fa-solid fa-magnifying-glass"></i>
+
+          Search
+        </button>
+      </div>
+    </section>
+
+    <section class="room-page">
+      <!-- Sidebar Start -->
+
+      <aside class="filter-sidebar">
+        <h2>Filters</h2>
+
+        <div class="filter-box">
+          <label> Budget Range </label>
+
+          <input type="range" />
+
+          <p>₹3000 - ₹15000</p>
+        </div>
+
+        <div class="filter-box">
+          <label> Room Type </label>
+
+          <div class="checkbox">
+            <input type="checkbox" />
+
+            <span> Single Sharing </span>
+          </div>
+
+          <div class="checkbox">
+            <input type="checkbox" />
+
+            <span> Double Sharing </span>
+          </div>
+        </div>
+
+        <div class="filter-box">
+          <label> Facilities </label>
+
+          <div class="checkbox">
+            <input type="checkbox" />
+
+            <span> WiFi </span>
+          </div>
+
+          <div class="checkbox">
+            <input type="checkbox" />
+
+            <span> AC </span>
+          </div>
+
+          <div class="checkbox">
+            <input type="checkbox" />
+
+            <span> Parking </span>
+          </div>
+
+          <div class="checkbox">
+            <input type="checkbox" />
+
+            <span> Food </span>
+          </div>
+        </div>
+
+        <div class="filter-box">
+          <label> Availability </label>
+
+          <select>
+            <option>Available</option>
+
+            <option>Booked</option>
+          </select>
+        </div>
+
+        <button class="filter-btn">Apply Filters</button>
+      </aside>
+
+      <!--ROOM CONTAINER -->
+
+      <div class="rooms-container">
+        <!--  ROOM CARD 1-->
+
+        <div class="room-card">
+          <div class="room-image">
+            <img src="images/room1.jpg" alt="Single Room" />
+
+            <span class="room-tag"> Available </span>
+
+            
+          </div>
+
+          <div class="room-content">
+            <h3>Premium Single Sharing Room</h3>
+
+            <h2>₹5,500 <span>/ Month</span></h2>
+
+            <p>
+              <i class="fa-solid fa-location-dot"></i>
+              1.2 KM from Gyan Vihar University
+            </p>
+
+            <div class="facilities">
+              <span><i class="fa-solid fa-wifi"></i> WiFi</span>
+
+              <span><i class="fa-solid fa-snowflake"></i> AC</span>
+
+              <span><i class="fa-solid fa-car"></i> Parking</span>
+
+              <span><i class="fa-solid fa-bath"></i> Attached Bath</span>
+            </div>
+
+            <div class="owner">
+              <i class="fa-solid fa-user"></i>
+
+              Rajesh Sharma
+            </div>
+
+            <div class="contact">
+              <i class="fa-solid fa-phone"></i>
+
+              +91 9876543210
+            </div>
+
+            <a href="#" class="details-btn"> View Details </a>
+          </div>
+        </div>
+
+        <!-- =====================================
+            ROOM CARD 2
+====================================== -->
+
+        <div class="room-card">
+          <div class="room-image">
+            <img src="images/room2.jpg" alt="Double Sharing Room" />
+
+            <span class="room-tag"> Available </span>
+
+            
+          </div>
+
+          <div class="room-content">
+            <h3>Double Sharing Room</h3>
+
+            <h2>₹4,200 <span>/ Month</span></h2>
+
+            <p>
+              <i class="fa-solid fa-location-dot"></i>
+              900 Meter from University
+            </p>
+
+            <div class="facilities">
+              <span><i class="fa-solid fa-wifi"></i> WiFi</span>
+
+              <span><i class="fa-solid fa-fan"></i> Non AC</span>
+
+              <span><i class="fa-solid fa-car"></i> Parking</span>
+            </div>
+
+            <div class="owner">
+              <i class="fa-solid fa-user"></i>
+
+              Aman Verma
+            </div>
+
+            <div class="contact">
+              <i class="fa-solid fa-phone"></i>
+
+              +91 9988776655
+            </div>
+
+            <a href="#" class="details-btn"> View Details </a>
+          </div>
+        </div>
+
+        <!-- =====================================
+            ROOM CARD 3
+====================================== -->
+
+        <div class="room-card">
+          <div class="room-image">
+            <img src="images/room3.jpg" alt="Luxury Room" />
+
+            <span class="room-tag"> Only 1 Left </span>
+
+            
+          </div>
+
+          <div class="room-content">
+            <h3>Luxury AC Room</h3>
+
+            <h2>₹8,500 <span>/ Month</span></h2>
+
+            <p>
+              <i class="fa-solid fa-location-dot"></i>
+              2 KM from College
+            </p>
+
+            <div class="facilities">
+              <span><i class="fa-solid fa-wifi"></i> WiFi</span>
+
+              <span><i class="fa-solid fa-snowflake"></i> AC</span>
+
+              <span><i class="fa-solid fa-utensils"></i> Food</span>
+
+              <span><i class="fa-solid fa-shirt"></i> Laundry</span>
+            </div>
+
+            <div class="owner">
+              <i class="fa-solid fa-user"></i>
+
+              Priya Singh
+            </div>
+
+            <div class="contact">
+              <i class="fa-solid fa-phone"></i>
+
+              +91 9123456789
+            </div>
+
+            <a href="#" class="details-btn"> View Details </a>
+          </div>
+        </div>
+
+        <div class="room-card">
+          <div class="room-image">
+            <img src="images/room12.jpg" alt="Room" />
+
+            <span class="room-tag">Available</span>
+
+            
+          </div>
+
+          <div class="room-content">
+            <h3>Comfort Double Sharing</h3>
+
+            <h2>₹4,800 <span>/ Month</span></h2>
+
+            <p>
+              <i class="fa-solid fa-location-dot"></i>
+              700 Meter Away
+            </p>
+
+            <div class="facilities">
+              <span><i class="fa-solid fa-wifi"></i> WiFi</span>
+              <span><i class="fa-solid fa-fan"></i> Non AC</span>
+              <span><i class="fa-solid fa-car"></i> Parking</span>
+              <span><i class="fa-solid fa-droplet"></i> RO Water</span>
+            </div>
+
+            <div class="owner">
+              <i class="fa-solid fa-user"></i>
+
+              Pooja Sharma
+            </div>
+
+            <div class="contact">
+              <i class="fa-solid fa-phone"></i>
+
+              +91 9812345678
+            </div>
+
+            <a href="#" class="details-btn"> View Details </a>
+          </div>
+        </div>
+
+        <!-- Close Rooms Container -->
+      </div>
+
+      <!-- Close Room Page -->
+    </section>
+
+
+
+    <!-- Google map api -->
+
+     <section class="rooms-map">
+      <h2>Find Rooms Near Your Location</h2>
+
+      <p>
+        Explore available rooms around universities and popular student
+        locations.
+      </p>
+
+      <iframe
+        src="https://www.google.com/maps?q=Jaipur&output=embed"
+        width="100%"
+        height="450"
+        style="border: 0"
+        loading="lazy"
+        allowfullscreen=""
+      >
+      </iframe>
+    </section>
+
+
+    <!-- Footer -->
+
+        <footer>
+      <div class="footer-container">
+        <!-- Company -->
+
+        <div class="footer-box">
+          <h2>RoomFinder</h2>
+
+          <p>
+            RoomFinder helps students and working professionals find verified
+            rooms, PGs and hostels near colleges, universities and workplaces.
+          </p>
+        </div>
+
+        <!-- Quick Links -->
+
+        <div class="footer-box">
+          <h3>Quick Links</h3>
+
+          <ul>
+            <li>
+              <a href="home.html"> Home </a>
+            </li>
+
+            <li>
+              <a href="about.html"> About </a>
+            </li>
+
+            <li>
+              <a href="rooms.html"> Rooms </a>
+            </li>
+
+            <li>
+              <a href="contact.html"> Contact </a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Contact -->
+
+        <div class="footer-box">
+          <h3>Contact Us</h3>
+
+          <p>
+            <i class="fa-solid fa-location-dot"></i>
+
+            Jaipur, Rajasthan
+          </p>
+
+          <p>
+            <i class="fa-solid fa-phone"></i>
+
+            +91 9876543210
+          </p>
+
+          <p>
+            <i class="fa-solid fa-envelope"></i>
+
+            info@roomfinder.com
+          </p>
+        </div>
+
+        <!-- Social -->
+
+        <div class="footer-box">
+          <h3>Follow Us</h3>
+
+          <div class="social-icons">
+            <a href="#">
+              <i class="fab fa-facebook-f"></i>
+            </a>
+
+            <a href="#">
+              <i class="fab fa-instagram"></i>
+            </a>
+
+            <a href="#">
+              <i class="fab fa-linkedin-in"></i>
+            </a>
+
+            <a href="#">
+              <i class="fab fa-twitter"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <hr />
+
+      <p class="copyright">© 2026 RoomFinder. All Rights Reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
